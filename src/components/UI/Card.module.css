@@ -10,7 +10,9 @@
   gap: 4px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
-    "one two three four"
-    "five six seven eight"
-    "nine ten eleven twelve";
+    "percent reset backspace divide"
+    "seven eight nine multiplier"
+    "four five six plus"
+    "one two three minus"
+    "blank zero comma equals";
 }

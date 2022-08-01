@@ -21,32 +21,62 @@
 }
 
 .button:nth-child(1) {
-  grid-area: one;
+  grid-area: percent;
 }
 .button:nth-child(2) {
-  grid-area: two;
+  grid-area: reset;
 }
 .button:nth-child(3) {
-  grid-area: three;
+  grid-area: backspace;
 }
 .button:nth-child(4) {
-  grid-area: four;
+  grid-area: divide;
 }
 .button:nth-child(5) {
-  grid-area: five;
-}
-.button:nth-child(6) {
-  grid-area: six;
-}
-.button:nth-child(7) {
   grid-area: seven;
 }
-.button:nth-child(8) {
+.button:nth-child(6) {
   grid-area: eight;
 }
-.button:nth-child(9) {
+.button:nth-child(7) {
   grid-area: nine;
 }
+.button:nth-child(8) {
+  grid-area: multiplier;
+}
+.button:nth-child(9) {
+  grid-area: four;
+}
 .button:nth-child(10) {
-  grid-area: ten;
+  grid-area: five;
+}
+.button:nth-child(11) {
+  grid-area: six;
+}
+.button:nth-child(12) {
+  grid-area: plus;
+}
+.button:nth-child(13) {
+  grid-area: one;
+}
+.button:nth-child(14) {
+  grid-area: two;
+}
+.button:nth-child(15) {
+  grid-area: three;
+}
+.button:nth-child(16) {
+  grid-area: minus;
+}
+.button:nth-child(17) {
+  grid-area: zero;
+}
+.button:nth-child(18) {
+  grid-area: zero;
+}
+.button:nth-child(19) {
+  grid-area: comma;
+}
+.button:nth-child(20) {
+  grid-area: equals;
 }

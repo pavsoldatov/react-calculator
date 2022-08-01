@@ -5,80 +5,106 @@ import Button from "../../UI/Button";
 
 const ENTITIES = [
   {
-    type: "number",
-    value: "1",
-    id: "1n",
+    type: "control_percent",
+    value: "%",
+    id: "cp1",
   },
   {
-    type: "number",
-    value: "2",
-    id: "2n",
+    type: "control_reset",
+    value: "reset",
+    id: "cr2",
   },
   {
-    type: "number",
-    value: "3",
-    id: "3n",
+    type: "control_backspace",
+    value: "<-",
+    id: "cb3",
   },
   {
-    type: "number",
-    value: "4",
-    id: "4n",
-  },
-  {
-    type: "number",
-    value: "5",
-    id: "5n",
-  },
-  {
-    type: "number",
-    value: "6",
-    id: "6n",
-  },
-  {
-    type: "number",
-    value: "7",
-    id: "7n",
-  },
-  {
-    type: "number",
-    value: "8",
-    id: "8n",
-  },
-  {
-    type: "number",
-    value: "9",
-    id: "9n",
-  },
-  {
-    type: "number",
-    value: "0",
-    id: "0n",
-  },
-  {
-    type: "control",
-    value: "+",
-    id: "1c",
-  },
-  {
-    type: "control",
-    value: "-",
-    id: "2c",
-  },
-  {
-    type: "control",
-    value: "x",
-    id: "3c",
-  },
-  {
-    type: "control",
+    type: "control_divide",
     value: "/",
-    id: "4c",
+    id: "cd4",
   },
   {
-    type: "control",
-    value: "=",
-    id: "5c",
+    type: "number_seven",
+    value: "7",
+    id: "ns1",
   },
+  {
+    type: "number_eight",
+    value: "8",
+    id: "ne2",
+  },
+  {
+    type: "number_nine",
+    value: "9",
+    id: "nn3",
+  },
+  {
+    type: "control_multiplier",
+    value: "x",
+    id: "cm5",
+  },
+  {
+    type: "number_four",
+    value: "4",
+    id: "nf4",
+  },
+  {
+    type: "number_five",
+    value: "5",
+    id: "nf5",
+  },
+  {
+    type: "number_six",
+    value: "6",
+    id: "ns6",
+  },
+  {
+    type: "control_plus",
+    value: "+",
+    id: "cp6",
+  },
+  {
+    type: "number_one",
+    value: "1",
+    id: "no7",
+  },
+  {
+    type: "number_two",
+    value: "2",
+    id: "nt8",
+  },
+  {
+    type: "number_three",
+    value: "3",
+    id: "nt9",
+  },
+  {
+    type: "control_minus",
+    value: "-",
+    id: "cm7",
+  },
+  {
+    type: "blank",
+    value: " ",
+    id: "blank",
+  },
+  {
+    type: "number_zero",
+    value: "0",
+    id: "nz10",
+  },
+  {
+    type: "control_comma",
+    value: ",",
+    id: "cc8",
+  },
+  {
+    type: "control_equals",
+    value: "=",
+    id: "cc9",
+  },
+
 ];
 
 function NumbersList(props) {
