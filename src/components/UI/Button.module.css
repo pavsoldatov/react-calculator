@@ -9,7 +9,7 @@
   border: 1px solid #ff9000;
   cursor: pointer;
   text-align: center;
-  transition: background-color 100ms ease-in-out;
+  transition: background-color 50ms ease-in-out;
 }
 
 .button:hover {
