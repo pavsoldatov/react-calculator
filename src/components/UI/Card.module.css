@@ -1,17 +1,16 @@
 .card {
-  border-radius: 4px;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    #0e1e2552 0px 2px 16px 0px;
-  width: min(40%, 75rem);
-  height: min(40%, 75rem);
-  
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #0e1e2552 0px 2px 16px 0px;
+
   margin-inline: auto;
   display: grid;
+  justify-content: center;
+  align-content: center;
   gap: 4px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-areas: 
-    'one two three four'
-    'five six seven four'
-    'eight eight nine nine'
-  ;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "one two three four"
+    "five six seven eight"
+    "nine ten eleven twelve";
 }

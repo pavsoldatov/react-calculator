@@ -1,6 +1,25 @@
 .button {
-  padding-block: 2rem 1rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #414141;
+  font-weight: 600;
+  font-size: 24px;
+  border: 1px solid #ff9000;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 100ms ease-in-out;
 }
+
+.button:hover {
+  background-color: #fff9f2;
+}
+
+.button:active {
+  background-color: #ffeed8;
+}
+
 .button:nth-child(1) {
   grid-area: one;
 }
@@ -27,4 +46,7 @@
 }
 .button:nth-child(9) {
   grid-area: nine;
+}
+.button:nth-child(10) {
+  grid-area: ten;
 }
