@@ -1,7 +1,9 @@
 .card {
   border-radius: 8px;
   padding: 1rem;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #0e1e2552 0px 2px 16px 0px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #ffeed8 0px 2px 16px 0px;
+  background-color: #fff;
+  max-width: min-content;
 
   margin-inline: auto;
   display: grid;
@@ -10,6 +12,7 @@
   gap: 4px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
+    "logger logger logger logger"
     "percent reset backspace divide"
     "seven eight nine multiplier"
     "four five six plus"

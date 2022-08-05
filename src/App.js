@@ -1,13 +1,14 @@
 import classes from "./App.module.css";
 import Card from "./components/UI/Card";
-import Button from "./components/UI/Button";
-import NumbersList from "./components/Controls/Numbers/NumbersList";
+import ButtonList from "./components/Controls/ButtonList/ButtonList";
+import Logger from "./components/UI/Logger"
 
 function App() {
   return (
     <div className={classes.app}>
       <Card>
-        <NumbersList />
+        <Logger />
+        <ButtonList />
       </Card>
     </div>
   );

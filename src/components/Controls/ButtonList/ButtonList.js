@@ -1,9 +1,6 @@
 import Button from "../../UI/Button";
 
-// Write a function to push every 4th element back to
-// array so that only controls are rendered on the right
-
-const ENTITIES = [
+const CALCULATOR_BUTTONS = [
   {
     type: "control_percent",
     value: "%",
@@ -11,17 +8,17 @@ const ENTITIES = [
   },
   {
     type: "control_reset",
-    value: "reset",
+    value: "C",
     id: "cr2",
   },
   {
     type: "control_backspace",
-    value: "<-",
+    value: "⌫",
     id: "cb3",
   },
   {
     type: "control_divide",
-    value: "/",
+    value: "÷",
     id: "cd4",
   },
   {
@@ -41,7 +38,7 @@ const ENTITIES = [
   },
   {
     type: "control_multiplier",
-    value: "x",
+    value: "×",
     id: "cm5",
   },
   {
@@ -104,13 +101,12 @@ const ENTITIES = [
     value: "=",
     id: "cc9",
   },
-
 ];
 
-function NumbersList(props) {
+function ButtonList() {
   return (
     <>
-      {ENTITIES.map((item) => {
+      {CALCULATOR_BUTTONS.map((item) => {
         return (
           <Button key={item.id} text={item.value} value={item.value}>
             {item.value}
@@ -121,4 +117,4 @@ function NumbersList(props) {
   );
 }
 
-export default NumbersList;
+export default ButtonList;

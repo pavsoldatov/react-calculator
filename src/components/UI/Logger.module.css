@@ -1,0 +1,18 @@
+.logger {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  border: 1px solid #ff9000;
+  padding: 0 8px;
+  margin-bottom: 4px;
+
+  height: 4rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+}
+
+.logger:nth-child(1) {
+  grid-area: logger;
+}
