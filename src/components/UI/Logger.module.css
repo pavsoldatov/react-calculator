@@ -1,6 +1,8 @@
 .logger {
   display: flex;
   align-items: center;
+  flex-direction: column;
+  align-items: flex-end;
 
   width: 100%;
   border: 1px solid #ff9000;

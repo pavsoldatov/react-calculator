@@ -82,9 +82,9 @@ const CALCULATOR_BUTTONS = [
     id: "cm7",
   },
   {
-    type: "blank",
-    value: " ",
-    id: "blank",
+    type: "control_comma",
+    value: ",",
+    id: "cc8",
   },
   {
     type: "number_zero",
@@ -92,15 +92,10 @@ const CALCULATOR_BUTTONS = [
     id: "nz10",
   },
   {
-    type: "control_comma",
-    value: ",",
-    id: "cc8",
-  },
-  {
     type: "control_equals",
     value: "=",
-    id: "cc9",
-  },
+    id: "ce9",
+  }
 ];
 
 function ButtonList() {

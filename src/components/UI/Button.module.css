@@ -1,6 +1,8 @@
 .button {
   height: 4.5rem;
-  width: 4.5rem;
+  min-width: 4.5rem;
+  width: auto;
+
   border-radius: 8px;
   background-color: #ffffff;
   color: #414141;
@@ -69,14 +71,13 @@
   grid-area: minus;
 }
 .button:nth-child(18) {
-  grid-area: zero;
+  grid-area: comma;
 }
 .button:nth-child(19) {
   grid-area: zero;
 }
 .button:nth-child(20) {
-  grid-area: comma;
-}
-.button:nth-child(21) {
   grid-area: equals;
 }
+
+
