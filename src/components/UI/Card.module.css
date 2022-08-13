@@ -3,19 +3,4 @@
   padding: 1rem;
   box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, #ffeed8 0px 2px 16px 0px;
   background-color: #fff;
-  max-width: min-content;
-
-  margin-inline: auto;
-  display: grid;
-  justify-content: center;
-  align-content: center;
-  gap: 4px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "logger logger logger logger"
-    "percent reset backspace divide"
-    "seven eight nine multiplier"
-    "four five six plus"
-    "one two three minus"
-    "comma zero equals equals";
 }

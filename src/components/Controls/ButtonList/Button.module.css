@@ -22,61 +22,61 @@
   background-color: #ffeed8;
 }
 
-.button:nth-child(2) {
+.button:nth-child(1) {
   grid-area: percent;
 }
-.button:nth-child(3) {
+.button:nth-child(2) {
   grid-area: reset;
 }
-.button:nth-child(4) {
+.button:nth-child(3) {
   grid-area: backspace;
 }
-.button:nth-child(5) {
+.button:nth-child(4) {
   grid-area: divide;
 }
-.button:nth-child(6) {
+.button:nth-child(5) {
   grid-area: seven;
 }
-.button:nth-child(7) {
+.button:nth-child(6) {
   grid-area: eight;
 }
-.button:nth-child(8) {
+.button:nth-child(7) {
   grid-area: nine;
 }
-.button:nth-child(9) {
+.button:nth-child(8) {
   grid-area: multiplier;
 }
-.button:nth-child(10) {
+.button:nth-child(9) {
   grid-area: four;
 }
-.button:nth-child(11) {
+.button:nth-child(10) {
   grid-area: five;
 }
-.button:nth-child(12) {
+.button:nth-child(11) {
   grid-area: six;
 }
-.button:nth-child(13) {
+.button:nth-child(12) {
   grid-area: plus;
 }
-.button:nth-child(14) {
+.button:nth-child(13) {
   grid-area: one;
 }
-.button:nth-child(15) {
+.button:nth-child(14) {
   grid-area: two;
 }
-.button:nth-child(16) {
+.button:nth-child(15) {
   grid-area: three;
 }
-.button:nth-child(17) {
+.button:nth-child(16) {
   grid-area: minus;
 }
-.button:nth-child(18) {
+.button:nth-child(17) {
   grid-area: comma;
 }
-.button:nth-child(19) {
+.button:nth-child(18) {
   grid-area: zero;
 }
-.button:nth-child(20) {
+.button:nth-child(19) {
   grid-area: equals;
 }
 

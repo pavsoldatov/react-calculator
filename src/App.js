@@ -1,27 +1,33 @@
 import classes from "./App.module.css";
 import Card from "./components/UI/Card";
 import ButtonList from "./components/Controls/ButtonList/ButtonList";
-import Logger from "./components/UI/Logger";
-
+import Logger from "./components/Controls/ButtonList/Logger";
 import { useEffect, useState, useRef } from "react";
 
 function App() {
   const [displayValue, setDisplayValue] = useState("0");
 
-  useEffect(() => {
-    const keyPressHandler = (e) => {
-      setDisplayValue((prevState) => {
-        return displayValue === "0" ? e.key : `${prevState}${e.key}`;
-      });
-    };
-    
-    document.addEventListener("keydown", keyPressHandler);
-    return () => document.removeEventListener("keydown", keyPressHandler);
-  }, [displayValue]);
-
   const clickHandler = (e) => {
     setDisplayValue((prevState) => {
-      return displayValue === "0" ? e.target.value : `${prevState}${e.target.value}`;
+      const buttonType = e.target.dataset.buttontype;
+      const buttonValue = e.target.value;
+
+      switch (buttonType) {
+        case "number":
+          return displayValue === "0"
+            ? buttonValue
+            : `${prevState}${buttonValue}`;
+        case "control":
+          return displayValue;
+        case "decimal":
+          return !displayValue.includes(buttonValue)
+            ? prevState + buttonValue
+            : displayValue;
+        case "control_reset":
+          setDisplayValue("0");
+        default:
+          return displayValue;
+      }
     });
   };
 

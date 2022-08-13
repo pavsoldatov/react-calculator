@@ -1,0 +1,14 @@
+.button-list {
+    margin-inline: auto;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    gap: 4px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "percent reset backspace divide"
+      "seven eight nine multiplier"
+      "four five six plus"
+      "one two three minus"
+      "comma zero equals equals";
+}
