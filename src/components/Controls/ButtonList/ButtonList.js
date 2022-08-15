@@ -15,13 +15,13 @@ const CALCULATOR_BUTTONS = [
     key: "Escape",
   },
   {
-    type: "control",
+    type: "control_remove",
     value: "⌫",
     id: "cb3",
     key: "Backspace",
   },
   {
-    type: "control",
+    type: "control_divide",
     value: "÷",
     id: "cd4",
     key: "/",

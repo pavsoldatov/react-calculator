@@ -2,40 +2,36 @@ import classes from "./App.module.css";
 import Card from "./components/UI/Card";
 import ButtonList from "./components/Controls/ButtonList/ButtonList";
 import Logger from "./components/Controls/ButtonList/Logger";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useReducer, useRef } from "react";
+
+function displayValueReducer(state, action) {
+  switch (action.type) {
+    case "number":
+      return state === "0" ? action.value : [...state, action.value];
+    case "decimal":
+      return !state.includes(action.value) ? [...state, action.value] : state;
+    case "control_reset":
+      return "0";
+    case "control_remove":
+      return state.length > 1 ? state.slice(0, state.length - 1) : "0";
+    // case "control_divide":
+    default:
+      return state;
+  }
+}
 
 function App() {
-  const [displayValue, setDisplayValue] = useState("0");
+  const [state, dispatch] = useReducer(displayValueReducer, "0");
 
-  const clickHandler = (e) => {
-    setDisplayValue((prevState) => {
-      const buttonType = e.target.dataset.buttontype;
-      const buttonValue = e.target.value;
-
-      switch (buttonType) {
-        case "number":
-          return displayValue === "0"
-            ? buttonValue
-            : `${prevState}${buttonValue}`;
-        case "control":
-          return displayValue;
-        case "decimal":
-          return !displayValue.includes(buttonValue)
-            ? prevState + buttonValue
-            : displayValue;
-        case "control_reset":
-          setDisplayValue("0");
-        default:
-          return displayValue;
-      }
-    });
+  const handleClick = (e) => {
+    dispatch({ type: e.target.dataset.buttontype, value: e.target.value });
   };
 
   return (
     <main className={classes.app}>
       <Card>
-        <Logger value={displayValue} />
-        <ButtonList onClick={clickHandler} />
+        <Logger value={state} />
+        <ButtonList onClick={handleClick} />
       </Card>
     </main>
   );
