@@ -1,4 +1,5 @@
 .button {
+  font-family: inherit;
   height: 4.5rem;
   min-width: 4.5rem;
   width: auto;

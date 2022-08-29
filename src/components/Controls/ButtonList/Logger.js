@@ -10,8 +10,8 @@ const Logger = React.forwardRef((props, ref) => {
         name="result"
         ref={ref}
       >
-        <p>Previous Calc</p>
-        <p>{props.value}</p>
+        <p className={classes["saved-number"]}>{props.expression}</p>
+        <p className={classes["current-value"]}>{props.enteredValue}</p>
       </output>
     </>
   );

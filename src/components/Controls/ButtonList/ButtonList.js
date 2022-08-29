@@ -4,7 +4,7 @@ import React from "react";
 
 const CALCULATOR_BUTTONS = [
   {
-    type: "control",
+    type: "percentage_operator",
     value: "%",
     id: "cp1",
   },
@@ -21,7 +21,7 @@ const CALCULATOR_BUTTONS = [
     key: "Backspace",
   },
   {
-    type: "control_divide",
+    type: "division_operator",
     value: "÷",
     id: "cd4",
     key: "/",
@@ -45,7 +45,7 @@ const CALCULATOR_BUTTONS = [
     key: "9",
   },
   {
-    type: "control",
+    type: "multiplication_operator",
     value: "×",
     id: "cm5",
     key: "*",
@@ -69,7 +69,7 @@ const CALCULATOR_BUTTONS = [
     key: "6",
   },
   {
-    type: "control",
+    type: "addition_operator",
     value: "+",
     id: "cp6",
     key: "+",
@@ -93,7 +93,7 @@ const CALCULATOR_BUTTONS = [
     key: "3",
   },
   {
-    type: "control",
+    type: "subtraction_operator",
     value: "-",
     id: "cm7",
     key: "-",
@@ -111,7 +111,7 @@ const CALCULATOR_BUTTONS = [
     key: "0",
   },
   {
-    type: "control",
+    type: "equality_operator",
     value: "=",
     id: "ce9",
     key: "=",
